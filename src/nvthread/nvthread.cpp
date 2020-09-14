@@ -11,6 +11,9 @@
 #include <unistd.h>
 #elif NV_OS_UNIX
 #include <sys/types.h>
+#if NV_OS_DARWIN
+#include <sys/sysctl.h>	
+#endif
 #include <unistd.h>
 #elif NV_OS_DARWIN
 #import <stdio.h>
